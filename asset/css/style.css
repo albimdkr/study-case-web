@@ -1,0 +1,95 @@
+/* ASSET */
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+/* color */
+:root {
+    /* Primary */
+    --primary1 : #1E1E1C;
+    --primary2 : #3A3A3B;
+    --primary3 : #4E4E4F;
+    --primary4 : #626263;
+    --primary5 : #767676;
+
+    /* Secondary */
+    --secondary1 : #538059;
+    --secondary2 : #75997A;
+    --secondary3 : #98B39B;
+    --secondary4 : #BACCBD;
+    --secondary5 : #DDE6DE;
+
+    /* Accent */
+    --accent1 : #EF6817;
+    --accent2 : #F28645;
+    --accent3 : #F5A474;
+    --accent4 : #F9C3A2;
+    --accent5 : #FCE1D1;
+
+    /* Success */
+    --success1 :#006F37;
+    --success2 :#338C5F;
+    --success3 :#66A987;
+    --success4 :#99C5AF;
+    --success5 :#CCE2D7;
+
+    /* Warning */
+    --warning1 :#F6DE16;
+    --warning2 :#F8E545;
+    --warning3 :#FAEB73;
+    --warning4 :#FBF2A2;
+
+    /* Error */
+    --error1:#F92D00;
+    --error2:#FA5733;
+    --error3:#FB8166;
+    --error4:#FDAB99;
+    --error5:#FED5CC;
+
+    /* Color Select */
+    --background: #1E1E1C;
+    --title :#FFFFFF;
+    --paragraf :#767676;
+    --primary-button :#538059;
+
+    /* PC */
+    /* font-hero*/
+    --hero-font-size: 48px;
+    --hero-font-style: normal;
+    --hero-font-weigth : 700;
+    --hero-line-heigt: 130%;
+    --hero-letter-spacing: 0.005em;
+
+    /* font-title */
+    --font-size-title: 38px;
+
+    /* font-service */
+    --font-size-title: 38px;
+    --service-font-size: ; 
+
+    /* font-client */
+    --client-font-size: 26px;
+    --client-font-weight: 400;
+    --client-line-height: 140%;
+    --review-font-size: 18px;
+
+    /* font-footer */
+    --footer-font-size-title: 20px;
+    --footer-font-size-subtitle: 18px;
+    --made-font-size: 20px;
+
+    /*  */
+
+}   
+
+/* ================================= */
+/* CONTENT */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    
+    background-color: var(--background);
+}

@@ -52,33 +52,83 @@
     --paragraf :#767676;
     --primary-button :#538059;
 
-    /* PC */
+    /* PC1*/
     /* font-hero*/
-    --hero-font-size: 48px;
-    --hero-font-style: normal;
-    --hero-font-weigth : 700;
-    --hero-line-heigt: 130%;
-    --hero-letter-spacing: 0.005em;
+    --hero-font-size1: 48px;
+    --hero-font-style1: normal;
+    --hero-font-weigth1 : 700;
+    --hero-line-heigt1: 130%;
+    --hero-letter-spacing1: 0.005em;
 
     /* font-title */
-    --font-size-title: 38px;
+    --font-size-title1: 38px;
 
     /* font-service */
-    --font-size-title: 38px;
-    --service-font-size: ; 
+    --font-size-title1: 38px;
+    --service-font-size1: 20px; 
 
     /* font-client */
-    --client-font-size: 26px;
-    --client-font-weight: 400;
-    --client-line-height: 140%;
-    --review-font-size: 18px;
+    --client-font-size1: 26px;
+    --client-font-weight1: 400;
+    --client-line-height1: 140%;
+    --review-font-size1: 18px;
 
     /* font-footer */
-    --footer-font-size-title: 20px;
-    --footer-font-size-subtitle: 18px;
-    --made-font-size: 20px;
+    --footer-font-size-title1: 20px;
+    --footer-font-size-subtitle1: 18px;
+    --made-font-size1: 20px;
 
-    /*  */
+    /*TAB2*/
+    /* font-hero */
+    --hero-font-size2: 42px;
+    --hero-font-style2: normal;
+    --hero-font-weigth2 : 700;
+    --hero-line-heigt2: 54.6px;
+    --hero-letter-spacing2: 0.05%;
+
+    /* font-title */
+    --font-size-title2: 32px;
+
+    /* font-service */
+    --font-size-title2: 24px;
+    --service-font-size2: 18px; 
+
+    /* font-client */
+    --client-font-size2: 32px;
+    --client-font-weight2: 700;
+    --client-line-height2: 44.8px;
+    --review-font-size2: 24px;
+
+    /* font-footer */
+    --footer-font-size-title2: 20px;
+    --footer-font-size-subtitle2: 18px;
+    --made-font-size2: 20px;
+
+    /*MOBILE3*/
+    /* font-hero */
+    --hero-font-size2: 24px;
+    --hero-font-style2: normal;
+    --hero-font-weigth2 : 700;
+    --hero-line-heigt2: 33.6px;
+    --hero-letter-spacing2: 0.05%;
+
+    /* font-title */
+    --font-size-title2: 20px;
+
+    /* font-service */
+    --font-size-title2: 18px;
+    --service-font-size2: 14px; 
+
+    /* font-client */
+    --client-font-size2: 20px;
+    --client-font-weight2: 700;
+    --client-line-height2: 150%;
+    --review-font-size2: 18px;
+
+    /* font-footer */
+    --footer-font-size-title2: 20px;
+    --footer-font-size-subtitle2: 18px;
+    --made-font-size2: 20px;
 
 }   
 
@@ -90,6 +140,161 @@
 }
 
 body {
-    
+    font-family: 'Poppins';
+    color: var(--title);
     background-color: var(--background);
+    overflow-x: hidden;
+}
+
+nav {
+    /* border: 3px solid red; */
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+    padding: 20px;
+}
+
+.logo {
+    margin: auto;
+}
+
+nav ul {
+    /* border: 3px solid darkcyan; */
+    list-style: none;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul li {
+    /* border: 3px solid orange; */
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: auto;
+}
+
+nav ul li a {
+    color: var(--title);
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    z-index: 2;
+    margin: 5px 15px;
+}
+
+.menu-toggle span {
+    display: block;
+    background-color: var(--title);
+    width: 38px;
+    height: 5px;
+    border-radius: 1px;
+    transition: all 0.35s;
+}
+
+
+.menu-toggle input {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    z-index: 0;
+    top: 100;
+    left: -10;
+    opacity: 0;
+}
+
+.menu-toggle span:nth-child(2){
+    transform-origin: 0 100%;
+}
+
+
+.menu-toggle span:nth-child(4){
+    transform-origin: 0 0;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2){
+    transform: rotate(45deg) translate(-1px, -1px);
+    background-color: var(--secondary1);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3){
+    transform: scale(0);
+    opacity: 0;
+}
+
+.menu-toggle input:checked ~ span:nth-child(4){
+    transform: rotate(-45deg) translate(-1px, 0);
+    background-color: var(--secondary1);
+}
+
+
+/* Break Point Responsive */
+/* Large Desktop */
+/* @media (max-width: 1200) {
+    
+} */
+
+/* Tab */
+@media (max-width: 768px){
+    .logo {
+        margin: 10px;
+    }
+
+    nav {
+        /* background-color: darkcyan; */
+    }
+
+    nav ul {
+        width: 90%;
+    }
+}
+
+/* mobile */
+@media (max-width: 576px){
+    nav {
+        /* background-color: #006F37; */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: var(--primary2);
+        height: 100vh;
+        position: absolute;
+        z-index: 1;
+        margin: 65px 0px 0px 40px;
+        transform: translateX(100%);
+        transition: all 0.40s;
+        opacity: 0;
+    }
+
+    nav ul li a {
+        color: var(--title);
+        transition: all 0.10s;
+    }
+
+    nav ul li a:hover {
+        box-sizing: border-box;
+        background-color: var(--secondary1);
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    nav ul.slide {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }

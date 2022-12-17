@@ -242,6 +242,110 @@ nav ul li a:hover {
 }
 
 
+.img {
+    width: 100%;
+}
+
+.container {
+    /* border: 3px solid cornflowerblue; */
+    margin: 40px 90px 0px 90px;
+}
+
+.header {
+    /* border: 3px solid var(--warning1); */
+    display: grid;
+    grid-template-areas: 
+    'text image'
+    'text image';
+}
+
+.item1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px;
+    /* border: 3px groove red; */
+}
+
+.heading {
+    font-size: var(--hero-font-size1);
+}
+
+.sub-heading {
+    font-size: var(--hero-font-size1);
+}
+
+.text {
+    grid-area: text;
+    min-height: 300px;
+}
+
+.button {
+    display: flex;
+    margin: au;
+}
+
+.button-primary {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    background-color: var(--secondary1);
+    align-items: center;
+    width: 150px;
+    padding: 10px;
+    margin: 10px 10px 0px 0px;
+    font-size: 20px;
+    cursor: pointer;
+    height: 50px;
+    border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+}
+
+.button-secondary {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    /* background-color:var(--warning1); */
+    border: 3px solid #538059;
+    align-items: center;
+    width: 150px;
+    padding: 10px;
+    margin: 10px 0px 0px 0px;
+    font-size: 20px;
+    cursor: pointer;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+}
+
+.button > a {
+    text-decoration: none;
+    color: var(--title);
+}
+
+.item2 {
+    display: grid;
+    place-content: center;
+}
+
+.image {
+    grid-area: image;
+    /* border: 3px solid var(--accent1); */
+    background-image: url("/asset/img/barang1.png");
+    background-position: center;
+    background-size: cover;
+    min-height: 300px;
+    min-width: 500px;
+}
+
+
 /* Break Point Responsive */
 /* Large Desktop */
 /* @media (max-width: 1200) {

@@ -54,81 +54,81 @@
 
     /* PC1*/
     /* font-hero*/
-    --hero-font-size1: 2em;
+    --hero-font-size1: 3em;
     --hero-font-style1: normal;
     --hero-font-weigth1 : 700;
     --hero-line-heigt1: 130%;
     --hero-letter-spacing1: 0.005em;
 
     /* font-title */
-    --font-size-title1: 38px;
+    --font-size-title1: 2.375em;
 
     /* font-service */
-    --font-size-title1: 38px;
-    --service-font-size1: 20px; 
+    --font-size-title1: 2.375em;
+    --service-font-size1: 1.25em; 
 
     /* font-client */
-    --client-font-size1: 26px;
+    --client-font-size1: 1.625em;
     --client-font-weight1: 400;
     --client-line-height1: 140%;
-    --review-font-size1: 18px;
+    --review-font-size1: 1.125em;
 
     /* font-footer */
-    --footer-font-size-title1: 20px;
-    --footer-font-size-subtitle1: 18px;
-    --made-font-size1: 20px;
+    --footer-font-size-title1: 1.25em;
+    --footer-font-size-subtitle1: 1.125em;
+    --made-font-size1: 1.25em;
 
     /*TAB2*/
     /* font-hero */
-    --hero-font-size2: 42px;
+    --hero-font-size2: 2.8125em;
     --hero-font-style2: normal;
     --hero-font-weigth2 : 700;
     --hero-line-heigt2: 54.6px;
     --hero-letter-spacing2: 0.05%;
 
     /* font-title */
-    --font-size-title2: 32px;
+    --font-size-title2: 2em;
 
     /* font-service */
-    --font-size-title2: 24px;
-    --service-font-size2: 18px; 
+    --font-size-title2: 1.5em;
+    --service-font-size2: 1.125em; 
 
     /* font-client */
     --client-font-size2: 32px;
     --client-font-weight2: 700;
     --client-line-height2: 44.8px;
-    --review-font-size2: 24px;
+    --review-font-size2: 1.5em;
 
     /* font-footer */
-    --footer-font-size-title2: 20px;
-    --footer-font-size-subtitle2: 18px;
-    --made-font-size2: 20px;
+    --footer-font-size-title2: 1.25em;
+    --footer-font-size-subtitle2: 1.125em;
+    --made-font-size2: 1.25em;
 
     /*MOBILE3*/
     /* font-hero */
-    --hero-font-size2: 24px;
-    --hero-font-style2: normal;
-    --hero-font-weigth2 : 700;
-    --hero-line-heigt2: 33.6px;
-    --hero-letter-spacing2: 0.05%;
+    --hero-font-size3: 1.8125em;
+    --hero-font-style3: normal;
+    --hero-font-weigth3 : 700;
+    --hero-line-heigt3: 33.6px;
+    --hero-letter-spacing3: 0.05%;
 
     /* font-title */
-    --font-size-title2: 20px;
+    --font-size-title3: 1.25em;
 
     /* font-service */
-    --font-size-title2: 18px;
-    --service-font-size2: 14px; 
+    --font-size-title3: 1.125em;
+    --service-font-size3: 0.875em; 
 
     /* font-client */
-    --client-font-size2: 20px;
-    --client-font-weight2: 700;
-    --client-line-height2: 150%;
-    --review-font-size2: 18px;
+    --client-font-size3: 1.25em;
+    --client-font-weight3: 700;
+    --client-line-height3: 150%;
+    --review-font-size3: 1.125em;
 
     /* font-footer */
-    --footer-font-size-title2: 20px;
-    --footer-font-size-subtitle2: 18px;
-    --made-font-size2: 20px;
+    --footer-font-size-title3: 1.25em;
+    --footer-font-size-subtitle3: 1.125em;
+    --made-font-size3: 1.25em;
 
 }   
 
@@ -241,20 +241,30 @@ nav ul li a:hover {
     background-color: var(--secondary1);
 }
 
-
+/* Header */
 .img {
     width: 100%;
 }
 
 .container {
+    position: relative;
+    display: flex;
+    justify-content:space-around;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: auto; */
     /* border: 3px solid cornflowerblue; */
-    margin: 0px 8.1em 0px 8.1em;
+    /* margin: 0px 0px 0px 0px; */
+    /* margin: 0px 8.1em 0px 8.1em; */
     /* max-width: (100% - 20px); */
 }
 
 .header {
+    width: auto;
     /* border: 3px solid var(--warning1); */
+    /* position: absolute; */
     display: grid;
+    /* gap: 1em; */
     grid-template-areas: 
     'text image'
     'text image';
@@ -345,6 +355,52 @@ nav ul li a:hover {
     min-height: 300px;
     min-width: 500px;
 }
+/* End : header */
+
+/* Service */
+.services {
+    /* display: block; */
+    padding: 50px;
+    margin: 50px;
+    width: auto;
+    position: relative;
+    min-height: 300px;
+    text-align: center;
+    /* border: 3px solid red; */
+}
+
+.title-service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 10px; */
+    text-align: center;
+    width: auto;
+    margin: auto;
+    font-size: var(--hero-font-size3);
+}
+
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.service {
+    margin: 10px auto;
+    padding: 20px;
+}
+
+.services > h2 {
+    font-size: var(--service-font-size3);
+}
+
+.services > p {
+    font-size: var(--service-font-size1);
+}
+
+/* End : service */
 
 
 /* Break Point Responsive */
@@ -360,7 +416,7 @@ nav ul li a:hover {
     }
 
     nav {
-        /* background-color: darkcyan; */
+        background-color: darkcyan;
     }
 
     nav ul {
@@ -384,23 +440,23 @@ nav ul li a:hover {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 50px;
+        margin: 10px;
         /* border: 3px groove red; */
     }
 
     .heading {
         text-align: center;
-        font-size: var(--hero-font-size2);
+        font-size: var(--hero-font-size1);
     }
     
     .sub-heading {
         text-align: center;
-        font-size: var(--hero-font-size2);
+        font-size: var(--hero-font-size1);
     }
 
     .text {
         grid-area: text;
-        min-height: 300px;
+        min-height: 15em;
     }
     
     .button {
@@ -490,5 +546,55 @@ nav ul li a:hover {
     nav ul.slide {
         transform: translateX(0);
         opacity: 1;
+    }
+
+    .heading {
+        text-align: center;
+        font-size: var(--hero-font-size3);
+    }
+    
+    .sub-heading {
+        text-align: center;
+        font-size: var(--hero-font-size3);
+    }
+
+    .button-primary {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        background-color: var(--secondary1);
+        align-items: center;
+        width: 80px;
+        padding: 10px;
+        margin: 10px 10px 0px 0px;
+        font-size: 20px;
+        cursor: pointer;
+        height: 50px;
+        border-radius: 13px;
+        -webkit-border-radius: 13px;
+        -moz-border-radius: 13px;
+        -ms-border-radius: 13px;
+        -o-border-radius: 13px;
+    }
+    
+    .button-secondary {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        /* background-color:var(--warning1); */
+        border: 3px solid #538059;
+        align-items: center;
+        width: 80px;
+        padding: 10px;
+        margin: 10px 0px 0px 0px;
+        font-size: 20px;
+        cursor: pointer;
+        height: 50px;
+        cursor: pointer;
+        border-radius: 13px;
+        -webkit-border-radius: 13px;
+        -moz-border-radius: 13px;
+        -ms-border-radius: 13px;
+        -o-border-radius: 13px;
     }
 }

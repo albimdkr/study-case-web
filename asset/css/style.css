@@ -242,7 +242,7 @@ nav ul li a:hover {
 }
 
 /* Header */
-.img {
+img {
     width: 100%;
 }
 
@@ -349,7 +349,7 @@ nav ul li a:hover {
 .image {
     grid-area: image;
     /* border: 3px solid var(--accent1); */
-    background-image: url("/asset/img/barang1.png");
+    background-image: url("/asset/img/hero-1.png");
     background-position: center;
     background-size: cover;
     min-height: 300px;
@@ -364,7 +364,6 @@ nav ul li a:hover {
     margin: 50px;
     width: auto;
     position: relative;
-    min-height: 300px;
     text-align: center;
     /* border: 3px solid red; */
 }
@@ -373,35 +372,71 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin: 10px; */
+    margin: 1.5em;
     text-align: center;
-    width: auto;
-    margin: auto;
     font-size: var(--hero-font-size3);
 }
-
 
 .services-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 30px;
+    margin:0 7em;
 }
 
-.service {
-    margin: 10px auto;
-    padding: 20px;
+.services {
+    margin: 3em auto;
+    padding: 25px;
 }
 
-.services > h2 {
-    font-size: var(--service-font-size3);
+.service, h2 {
+    font-size: var(--service-font-size2);
+    color: var(--title);
 }
 
-.services > p {
-    font-size: var(--service-font-size1);
+.service, p {
+    font-size: var(--service-font-size2);
+    /*border: 3px solid red;
+    */color: var(--paragraf);
+    transition: all 0.50s;
+    -webkit-transition: all 0.50s;
+    -moz-transition: all 0.50s;
+    -ms-transition: all 0.50s;
+    -o-transition: all 0.50s;
 }
 
+.service, p:hover {
+    color: var(--title);
+}
 /* End : service */
 
+/* Gallery */
+.title-gallery {
+    font-size: var(--hero-font-size3);
+    display: flex;
+    justify-content: center;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* border: 3px solid red; */
+    gap: 25px;
+    margin: 7em;
+    padding: 10px;
+    background-position: center;
+    background-size: cover;
+    background-clip: border-box;
+    margin-top: 50px;
+    align-items: center;
+}
+
+
+
+
+
+
+/* End Gallery */
 
 /* Break Point Responsive */
 /* Large Desktop */

@@ -5,7 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study Case</title>
+    <!-- css -->
     <link rel="stylesheet" href="/asset/css/style.css">
+
+    <!-- icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Swipper CSS -->
+    <link rel="stylesheet" href="/asset/css/swiper-bundle.min.css">
+
 </head>
 <body>
     <nav>
@@ -46,15 +54,15 @@
         <div class="services-container">
             <div class="service">
                 <h2>Lorem1</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatibus nobis voluptates modi aperiam facilis!</p>
+                <p class="service-paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatibus nobis voluptates modi aperiam facilis!</p>
             </div>
             <div class="service">
                 <h2>Lorem2</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatibus nobis voluptates modi aperiam facilis!</p>
+                <p class="service-paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatibus nobis voluptates modi aperiam facilis!</p>
             </div>
             <div class="service">
                 <h2>Lorem3</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatibus nobis voluptates modi aperiam facilis!</p>
+                <p class="service-paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatibus nobis voluptates modi aperiam facilis!</p>
             </div>
         </div>
     </section>
@@ -67,21 +75,61 @@
             <img src="/asset/img/barang2.png" alt="">
             <img src="/asset/img/barang2.png" alt="">
             <img src="/asset/img/barang2.png" alt="">
-            <img src="/asset/img/barang2.png" alt="">
-            <img src="/asset/img/barang2.png" alt="">
-            <img src="/asset/img/barang2.png" alt="">
-            <img src="/asset/img/barang2.png" alt="">
-            <img src="/asset/img/barang2.png" alt="">
-            <img src="/asset/img/barang2.png" alt="">
         </section>
+        <a href="#"><h4 class="link-gallery">Selengkapnya</h4></a>
     <!-- End Gallery -->
 
 
     <!-- section client -->
-    <section class="client">
+    <section class="container-client">
+        <!-- new : mySwiper -->
+        <div class="client mySwiper">
+            <!-- new : swiper-wrapper -->
+            <h2 class="client-title" >TESTIMONI</h2>
+            <div class="client-content swiper-wrapper"> 
+                <!-- new : swiper-slide -->
+                <div class="slide swiper-slide">
+                    <img src="/asset/img/client1.png" alt="" class="img-client">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam porro explicabo, architecto vitae temporibus vel! Voluptate consectetur est nobis id suscipit minima beatae a vitae.</p>
+                    <i class='bx bxs-quote-alt-left quote-icon'></i>
+                    <div class="details">
+                        <span class="name">User1</span>
+                        <span class="job">Status</span>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="/asset/img/client1.png" alt="" class="img-client">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam porro explicabo, architecto vitae temporibus vel! Voluptate consectetur est nobis id suscipit minima beatae a vitae.</p>
+                    <i class='bx bxs-quote-alt-left quote-icon'></i>
+                    <div class="details">
+                        <span class="name">User2</span>
+                        <span class="job">Status</span>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="/asset/img/client1.png" alt="" class="img-client">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam porro explicabo, architecto vitae temporibus vel! Voluptate consectetur est nobis id suscipit minima beatae a vitae.</p>
+                    <i class='bx bxs-quote-alt-left quote-icon'></i>
+                    <div class="details">
+                        <span class="name">User3</span>
+                        <span class="job">Status</span>
+                    </div>
+                </div>
+            <!-- End slider -->
+            </div>
+            <!-- new : 3 -->
+            <div class="swiper-button-next nav-btn"></div>
+            <div class="swiper-button-prev nav-btn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
     </section>
     <!-- end section client -->
     
+    <!-- Footer -->
+    <!-- End Footer -->
+
+<!-- Swipper JS -->
+<script src="/asset/js/swiper-bundle.min.js"></script>
 <script src="/asset/js/script.js"></script>
 </body>
 </html>

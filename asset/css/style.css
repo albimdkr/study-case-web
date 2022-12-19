@@ -200,7 +200,7 @@ nav ul li a:hover {
 .menu-toggle span {
     display: block;
     background-color: var(--title);
-    width: 38px;
+    width: 32px;
     height: 5px;
     border-radius: 1px;
     transition: all 0.35s;
@@ -340,6 +340,10 @@ img {
     color: var(--title);
 }
 
+.icon-whatsapp {
+    font-size: 1.2em;
+}
+
 .item2 {
     display: grid;
     place-content: center;
@@ -408,7 +412,7 @@ img {
     -o-transition: all 0.50s;
 }
 
-.service, .service-paragraf:hover {
+.service .service-paragraf:hover {
     color: var(--title);
 }
 /* End : service */
@@ -435,22 +439,31 @@ img {
     align-items: center;
 }
 
-a, .link-gallery {
-    text-decoration: none;
-    color: var(--secondary1);
-    cursor: pointer;
-}
-
 .link-gallery {
     display: flex;
     justify-content: center;
     text-decoration: none;
+    text-decoration: none;
+    color: var(--secondary1);
+    /* cursor: pointer; */
+    margin: 1em;
+    /* border: 3px solid rebeccapurple; */
+    /* width: 60% auto; */
+}
+
+
+.link-selengkapnya {
+    display: flex;
+    font-size: 1.1em;
+    text-align: center;
+    align-items: center;
 }
 /* End Gallery */
 
 /* Client */
 .container-client {
-    height: 80vh;
+    margin: 30px auto;
+    height: 60vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -465,19 +478,18 @@ a, .link-gallery {
     font-size: var(--client-font-size1);
 }
 .client {
-    /* display: flex;
-    justify-content: center; */
     position: relative;
     max-width: 900px;
     width: 100%;
     /* background-color: var(--secondary1); */
-    padding: 50px 0px;
+    padding: 4em 0px;
     overflow: hidden;
+    margin: auto;
 }
 
 .client .img-client {
-    height: 170px;
-    width: 170px;
+    height: 200px;
+    width: 200px;
     padding: 10px;
     object-fit: cover;
     border-radius: 70%;
@@ -492,14 +504,14 @@ a, .link-gallery {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 30px;
 }
 
 .slide p{
     padding: 0 100px;
     font-weight: 400;
     text-align: center;
-    font-size: 14px;
+    font-size: 1em;
 }
 
 .slide .quote-icon{
@@ -515,7 +527,7 @@ a, .link-gallery {
 }
 
 .details .name {
-    font-size: 14px;
+    font-size: 1em;
     font-weight: 600;
 }
 
@@ -530,7 +542,7 @@ a, .link-gallery {
 .nav-btn {
     height: 40px;
     width: 40px;
-    background-color: var(--secondary1);
+    /* background-color: var(--secondary1); */
     padding: 30px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -542,6 +554,15 @@ a, .link-gallery {
     -moz-transform: translateY(30px);
     -ms-transform: translateY(30px);
     -o-transform: translateY(30px);
+    transition: all 0.50s;
+    -webkit-transition: all 0.50s;
+    -moz-transition: all 0.50s;
+    -ms-transition: all 0.50s;
+    -o-transition: all 0.50s;
+}
+
+.nav-btn:hover {
+    background-color: var(--secondary1);
 }
 
 .nav-btn::after,
@@ -549,20 +570,6 @@ a, .link-gallery {
     font-size: 20px;
     color: var(--title);
 }
-
-.swiper-pagination-bullet {
-    background-color: red;
-}
-
-
-
-
-
-
-/* .swiper-pagination-bullet-active {
-    background-color: var(--secondary1);
-} */
-
 
 /* Break Point Responsive */
 /* Large Desktop */
@@ -664,8 +671,6 @@ a, .link-gallery {
         -ms-border-radius: 13px;
         -o-border-radius: 13px;
     }
-
-       
 }
 
 /* mobile */
@@ -681,8 +686,8 @@ a, .link-gallery {
         background-color: var(--primary2);
         height: 100vh;
         position: absolute;
-        z-index: 1;
-        margin: 65px 0px 0px 40px;
+        z-index: 2;
+        margin: -20px 0px 0px 40px;
         transform: translateX(100%);
         transition: all 0.40s;
         opacity: 0;
@@ -774,5 +779,19 @@ a, .link-gallery {
             margin: 1.5em;
             text-align: center;
             font-size: var(--hero-font-size3);
+        }
+
+        .nav-btn {
+            display: none;
+            visibility: hidden;
+            /* background-color: white; */
+        }
+
+        .client .slide {
+            row-gap: 20px;
+        }
+
+        .swiper-pagination {
+            margin: 30px auto;
         }
     }

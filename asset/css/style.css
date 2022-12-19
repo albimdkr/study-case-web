@@ -477,6 +477,7 @@ img {
     margin: 1em;
     font-size: var(--client-font-size1);
 }
+
 .client {
     position: relative;
     max-width: 900px;
@@ -570,6 +571,55 @@ img {
     font-size: 20px;
     color: var(--title);
 }
+
+
+/* Sosial Media */
+.container-socialmedia {
+    /* position: absolute; */
+    margin: 19em auto;
+    /* border: 3px solid rebeccapurple; */
+    display: flex;
+    flex-direction: column;
+}
+
+.socialmedia-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 1em;
+    font-size: var(--client-font-size1);
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid wheat; */
+}
+
+.link-item {
+    text-decoration: none;
+    color: var(--title);
+    /* border: 3px solid rebeccapurple; */
+    margin: 10px auto;
+}
+
+.sm-item {
+    display: flex;
+    justify-content: center;
+    background-color: var(--secondary1);
+    padding: 20px;
+    margin: 20px;
+    font-size: 3em;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+/* End Sosial Media */
 
 /* Break Point Responsive */
 /* Large Desktop */
@@ -762,6 +812,16 @@ img {
         -moz-border-radius: 13px;
         -ms-border-radius: 13px;
         -o-border-radius: 13px;
+        }
+
+        /* .button-secondary, a {
+            display: none;
+        } */
+
+        .icon-whatsapp {
+            display: none;
+            font-size: 1em;
+            /* visibility: hidden; */
         }
 
         /* Service */

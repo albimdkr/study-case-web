@@ -259,7 +259,7 @@ img {
 }
 
 .header {
-    border: 3px solid red;
+    /* border: 3px solid red; */
     margin: 0 100px auto;
     width: auto;
     display: grid;
@@ -371,7 +371,7 @@ img {
     width: auto;
     position: relative;
     text-align: center;
-    border: 3px solid red;
+    /* border: 3px solid red; */
 }
 
 
@@ -413,7 +413,7 @@ img {
 
 /* Gallery */
 .gallery-container {
-   border: 3px solid red;
+   /* border: 3px solid red; */
    margin: 100px auto;
 }
 
@@ -468,14 +468,14 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 3px solid red;
+    /* border: 3px solid red; */
 }
 
 .title-client {
     font-size: var(--hero-font-size3);
     display: flex;
     justify-content: center;
-    border: 3px solid gold;
+    /* border: 3px solid gold; */
 }
 
 .client {
@@ -583,7 +583,7 @@ img {
     display: flex;
     flex-direction: column;
     margin: 100px auto;
-    border: 3px solid red;
+    /* border: 3px solid red; */
     /* height: vh; */
 }
 
@@ -623,8 +623,79 @@ img {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
-
 /* End Sosial Media */
+
+/* Footer */
+.container-footer {
+    margin: 150px 150px auto;
+    /* border: 3px solid red; */
+    padding: 5px;
+}
+
+.footer-heading {
+    /* border: 3px solid yellow; */
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+}
+
+.item-footer {
+    /* border: 3px solid rebeccapurple; */
+    margin: 10px;
+    width: 100%;
+    padding: 30px;
+}
+
+.container-icon {
+    display: flex;
+}
+
+.footer-icon {
+    background-color: var(--secondary1);
+    padding: 5px;
+    margin: 3px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.alamat {
+    font-size: var(--footer-font-size-title1);
+    text-align: center;
+}
+
+/* .footer-icon-map {
+    padding: 5px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+} */
+
+.developer {
+    /* border: 3px solid green; */
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+.container-footer a {
+    text-decoration: none;
+    color: var(--title);
+    text-align: justify;
+}
+
+/* End Footer */
 
 /* Break Point Responsive */
 /* Large Desktop */
@@ -882,9 +953,9 @@ img {
             margin: 30px auto;
         }
 
-        /* .social-media {
+        .social-media {
             flex-direction: column;
-        } */
+        }
 
         .link-item {
             font-size: 1em;
@@ -893,6 +964,33 @@ img {
 
         .sm-item {
             padding: 8px;
+        }
+
+        .footer-heading {
+            /* border: 3px solid yellow; */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .item-footer {
+            justify-content: center;
+            /* border: 1px solid rebeccapurple; */
+            margin: 5px;
+            width: 100%;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .developer {
+            /* border: 3px solid green; */
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding: 30px;
+            margin: auto;
+            /* font-size: var(--made-font-size3); */
+            /* width: 120px; */
         }
         
     }

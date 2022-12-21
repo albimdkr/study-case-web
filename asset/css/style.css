@@ -657,8 +657,9 @@ img {
 .sm-item {
     display: flex;
     justify-content: center;
-    background-color: var(--secondary1);
-    padding: 20px;
+    border: 3px solid var(--secondary1);
+    /*background-color: var(--secondary1);
+    */padding: 20px;
     margin: 20px;
     font-size: 3em;
     border-radius: 50%;
@@ -666,6 +667,15 @@ img {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    transition: all 0.50s;
+    -webkit-transition: all 0.50s;
+    -moz-transition: all 0.50s;
+    -ms-transition: all 0.50s;
+    -o-transition: all 0.50s;
+}
+
+.sm-item:hover {
+    background-color: var(--secondary1);
 }
 /* End Sosial Media */
 

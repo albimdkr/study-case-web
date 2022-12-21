@@ -281,9 +281,42 @@ img {
     font-size: var(--hero-font-size1);
 }
 
+.name-company {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    /* font-weight: 500; */
+}
+
+
+.typewriter .sub-heading {
+    font-size: var(--font-size-title3);
+    font-weight: 100;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid var(--secondary1); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--secondary1); }
+  }
+/* 
 .sub-heading {
     font-size: var(--hero-font-size1);
-}
+} */
 
 .text {
     grid-area: text;
@@ -318,8 +351,8 @@ img {
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    /* background-color:var(--warning1); */
-    border: 3px solid #538059;
+    /*background-color:var(--warning1);
+    */border: 3px solid #538059;
     align-items: center;
     width: 7em;
     padding: 10px;
@@ -333,6 +366,16 @@ img {
     -moz-border-radius: 13px;
     -ms-border-radius: 13px;
     -o-border-radius: 13px;
+    transition: all 0.20s;
+    -webkit-transition: all 0.20s;
+    -moz-transition: all 0.20s;
+    -ms-transition: all 0.20s;
+    -o-transition: all 0.20s;
+}
+
+.button-secondary:hover {
+    border: 0px;
+    background-color: var(--secondary1);
 }
 
 .button > a {
@@ -343,6 +386,7 @@ img {
 .icon-whatsapp {
     font-size: 1.2em;
 }
+
 
 .item2 {
     display: grid;
@@ -657,9 +701,14 @@ li a {
     display: flex;
 }
 
+.title-footer {
+    font-size: var(--footer-font-size-title1);
+}
+
 .footer-icon {
     background-color: var(--secondary1);
     padding: 5px;
+    color: var(--title);
     margin: 3px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -691,8 +740,17 @@ li a {
 
 .container-footer a {
     text-decoration: none;
-    color: var(--title);
+    color: var(--paragraf);
     text-align: justify;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    -o-transition: all 0.25s;
+}
+
+.container-footer a:hover {
+    color: var(--title);
 }
 
 /* End Footer */

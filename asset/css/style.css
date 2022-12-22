@@ -695,15 +695,6 @@ img {
     margin: 150px 150px auto;
     width: auto;
     padding: 5px;
-    transition: all 0.50s;
-    -webkit-transition: all 0.50s;
-    -moz-transition: all 0.50s;
-    -ms-transition: all 0.50s;
-    -o-transition: all 0.50s;
-}
-
-.container-footer:hover {
-    box-shadow: 0 4px 30px var(--primary6);
 }
 
 .footer-heading {

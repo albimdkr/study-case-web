@@ -218,7 +218,7 @@ nav ul li a:hover {
     display: block;
     background-color: var(--title);
     width: 55px;
-    height: 6px;
+    height: 5px;
     border-radius: 1px;
     transition: all 0.35s;
 }
@@ -226,10 +226,10 @@ nav ul li a:hover {
 
 .menu-toggle input {
     position: absolute;
-    height: 60px;
-    width: 60px;
+    height: 90px;
+    width: 90px;
     cursor: pointer;
-    z-index: 0;
+    z-index: 1;
     top: 100;
     left: -10;
     opacity: 0;
@@ -247,6 +247,10 @@ nav ul li a:hover {
 .menu-toggle input:checked ~ span:nth-child(2){
     transform: rotate(45deg) translate(-1px, -1px);
     background-color: var(--secondary1);
+    -webkit-transform: rotate(45deg) translate(-1px, -1px);
+    -moz-transform: rotate(45deg) translate(-1px, -1px);
+    -ms-transform: rotate(45deg) translate(-1px, -1px);
+    -o-transform: rotate(45deg) translate(-1px, -1px);
 }
 
 .menu-toggle input:checked ~ span:nth-child(3){
@@ -257,6 +261,10 @@ nav ul li a:hover {
 .menu-toggle input:checked ~ span:nth-child(4){
     transform: rotate(-45deg) translate(-1px, 0);
     background-color: var(--secondary1);
+    -webkit-transform: rotate(-45deg) translate(-1px, 0);
+    -moz-transform: rotate(-45deg) translate(-1px, 0);
+    -ms-transform: rotate(-45deg) translate(-1px, 0);
+    -o-transform: rotate(-45deg) translate(-1px, 0);
 }
 
 /* Header */
@@ -484,9 +492,9 @@ img {
 
 
 .img-container {
+    cursor: pointer;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    /* border: 3px solid red; */
     gap: 25px;
     flex-direction: column;
     margin: 50px;
@@ -498,17 +506,48 @@ img {
     align-items: center;
 }
 
+/*WRAPPER */
+.hoverwrap {
+    position: relative;
+    max-width: 500px;
+  }
+  
+  .hoverwrap img { width: 100%; }
+  .hovercap {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1px;
+    position: absolute;
+    bottom: 0; left: 0; top: 1;
+    margin-bottom: 0.43rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+  }
+
+  .hovercap {
+    visibility: none; opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .hoverwrap:hover .hovercap {
+    visibility: visible; opacity: 1;
+  }
+
+  .hovercap .title-hovercap {
+    font-weight: 900;
+  }
+
 .link-gallery {
     display: flex;
     justify-content: center;
     text-decoration: none;
     text-decoration: none;
     color: var(--secondary1);
-    /* cursor: pointer; */
     margin: 1em auto;
-    /* border: 3px solid rebeccapurple; */
-    /* width: 60% auto; */
 }
+
+
 
 
 .link-selengkapnya {
@@ -641,8 +680,6 @@ img {
     display: flex;
     flex-direction: column;
     margin: 100px auto;
-    /* border: 3px solid red; */
-    /* height: vh; */
 }
 
 .socialmedia-title {
@@ -669,7 +706,8 @@ img {
 .sm-item {
     display: flex;
     justify-content: center;
-    border: 3px solid var(--secondary1);
+    /* border: 3px solid var(--secondary1); */
+    background-color: var(--primary2);
     padding: 20px;
     margin: 20px;
     font-size: 3em;
@@ -691,10 +729,12 @@ img {
 /* End Sosial Media */
 
 /* Footer */
-.container-footer {
+footer {
+    display: flex;
+    justify-content: space-around;
     margin: 150px 150px auto;
     width: auto;
-    padding: 5px;
+    /* padding: 10px; */
 }
 
 .footer-heading {
@@ -711,6 +751,9 @@ li a {
 }
 
 .item-footer {
+    /* display: flex; */
+    justify-content:space-around;
+    flex-direction: column;
     margin: 10px;
     width: 100%;
     padding: 30px;
@@ -739,19 +782,15 @@ li a {
 .alamat {
     font-size: var(--footer-font-size-title1);
     text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    text-align: justify;
 }
 
-/* .footer-icon-map {
-    padding: 5px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-} */
 
 
-.container-footer a {
+footer a {
     text-decoration: none;
     color: var(--paragraf);
     text-align: justify;
@@ -762,7 +801,7 @@ li a {
     -o-transition: all 0.25s;
 }
 
-.container-footer a:hover {
+footer a:hover {
     color: var(--title);
 }
 
@@ -1059,12 +1098,17 @@ li a {
         .footer-heading {
             display: flex;
             flex-direction: column;
+            justify-content: flex-end;
+            width: auto;
+            /* align-items: center; */
         }
 
         .item-footer {
-            justify-content: center;
-            margin: 5px;
+            justify-content: flex-end;
+            /* margin: 5px; */
             width: 100%;
+            /* align-items: flex-start; */
+            /* text-align: center; */
             padding: 5px;
             display: flex;
             flex-direction: column;

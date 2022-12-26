@@ -170,10 +170,12 @@ nav {
 
 .logo {
     margin: auto;
-    width: 60px;
+    width: 180px;
     height: auto;
-    /* border: 3px solid red; */
+}
 
+.title-navbar {
+    margin: auto;
 }
 
 nav ul {
@@ -194,14 +196,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: var(--paragraf);
+    color: var(--title);
     text-decoration: none;
     transition: all 0.50s;
 }
 
 nav ul li a:hover {
-    color: var(--title);
-    /* transform: scale(1.1); */
+    color: var(--secondary1);
+    font-weight: 300;
 }
 
 .menu-toggle {
@@ -221,6 +223,10 @@ nav ul li a:hover {
     height: 5px;
     border-radius: 1px;
     transition: all 0.35s;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    -o-border-radius: 1px;
 }
 
 
@@ -311,7 +317,6 @@ img {
     font-size: 1.5em;
     /* font-weight: 500; */
 }
-
 
 .typewriter .sub-heading {
     font-size: var(--font-size-title3);
@@ -832,6 +837,12 @@ footer a:hover {
     color: var(--title);
 }
 
+.mount {
+    position: absolute;
+    top: 190em;
+    bottom: 0;
+    z-index: -1;
+}
 /* End Footer */
 
 /* Break Point Responsive */
@@ -1112,6 +1123,13 @@ footer a:hover {
             padding: 5px;
             display: flex;
             flex-direction: column;
+        }
+
+        .mount {
+            position: absolute;
+            top: 30em;
+            bottom: 0;
+            z-index: -1;
         }
         
     }

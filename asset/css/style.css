@@ -204,6 +204,7 @@ nav ul li a {
 nav ul li a:hover {
     color: var(--secondary1);
     font-weight: 300;
+    
 }
 
 .menu-toggle {
@@ -276,6 +277,17 @@ nav ul li a:hover {
 /* Header */
 img {
     width: 100%;
+    transition: all 0.50s;
+    -webkit-transition: all 0.50s;
+    -moz-transition: all 0.50s;
+    -ms-transition: all 0.50s;
+    -o-transition: all 0.50s;
+}
+
+img:hover {
+    box-shadow: 0px 0px 50px -5px rgba(78,78,79,0.75);
+    -webkit-box-shadow: 0px 0px 50px -5px rgba(78,78,79,0.75);
+    -moz-box-shadow: 0px 0px 50px -5px rgba(78,78,79,0.75);
 }
 
 .container {
@@ -371,6 +383,11 @@ img {
     -moz-border-radius: 13px;
     -ms-border-radius: 13px;
     -o-border-radius: 13px;
+    transition: all 0.50s;
+    -webkit-transition: all 0.50s;
+    -moz-transition: all 0.50s;
+    -ms-transition: all 0.50s;
+    -o-transition: all 0.50s;
 }
 
 .button-secondary {
@@ -392,16 +409,25 @@ img {
     -moz-border-radius: 13px;
     -ms-border-radius: 13px;
     -o-border-radius: 13px;
-    transition: all 0.20s;
-    -webkit-transition: all 0.20s;
-    -moz-transition: all 0.20s;
-    -ms-transition: all 0.20s;
-    -o-transition: all 0.20s;
+    transition: all 0.50s;
+    -webkit-transition: all 0.50s;
+    -moz-transition: all 0.50s;
+    -ms-transition: all 0.50s;
+    -o-transition: all 0.50s;
+}
+
+.button-primary:hover {
+    box-shadow: 0px 0px 50px -5px rgba(58,58,59,0.75);
+    -webkit-box-shadow: 0px 0px 50px -5px rgba(58,58,59,0.75);
+    -moz-box-shadow: 0px 0px 50px -5px rgba(58,58,59,0.75);
 }
 
 .button-secondary:hover {
     border: 0px;
     background-color: var(--secondary1);
+    box-shadow: 0px 0px 50px -5px rgba(58,58,59,0.75);
+    -webkit-box-shadow: 0px 0px 50px -5px rgba(58,58,59,0.75);
+    -moz-box-shadow: 0px 0px 50px -5px rgba(58,58,59,0.75);
 }
 
 .button > a {
@@ -552,9 +578,6 @@ img {
     margin: 1em auto;
 }
 
-
-
-
 .link-selengkapnya {
     display: flex;
     font-size: 1.1em;
@@ -646,7 +669,7 @@ img {
 .nav-btn {
     height: 40px;
     width: 40px;
-    /* background-color: var(--secondary1); */
+    background-color: var(--primary2);
     padding: 30px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -667,6 +690,9 @@ img {
 
 .nav-btn:hover {
     background-color: var(--secondary1);
+    box-shadow: 0px 0px 50px -5px rgba(58,58,59,0.75);
+    -webkit-box-shadow: 0px 0px 50px -5px rgba(58,58,59,0.75);
+    -moz-box-shadow: 0px 0px 50px -5px rgba(58,58,59,0.75);
 }
 
 .nav-btn::after,
@@ -730,6 +756,9 @@ img {
 
 .sm-item:hover {
     background-color: var(--secondary1);
+    box-shadow: 0px 0px 50px -5px rgba(58,58,59,0.75);
+    -webkit-box-shadow: 0px 0px 50px -5px rgba(58,58,59,0.75);
+    -moz-box-shadow: 0px 0px 50px -5px rgba(58,58,59,0.75);
 }
 /* End Sosial Media */
 
@@ -773,7 +802,7 @@ li a {
 }
 
 .footer-icon {
-    background-color: var(--secondary1);
+    background-color: var(--primary2);
     padding: 5px;
     color: var(--title);
     margin: 3px;
@@ -782,6 +811,18 @@ li a {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    transition: all 0.50s;
+    -webkit-transition: all 0.50s;
+    -moz-transition: all 0.50s;
+    -ms-transition: all 0.50s;
+    -o-transition: all 0.50s;
+}
+
+.footer-icon:hover {
+    background-color: var(--secondary1);
+    box-shadow: 0px 0px 50px -5px rgba(58,58,59,0.75);
+    -webkit-box-shadow: 0px 0px 50px -5px rgba(58,58,59,0.75);
+    -moz-box-shadow: 0px 0px 50px -5px rgba(58,58,59,0.75);
 }
 
 .alamat {
@@ -794,10 +835,9 @@ li a {
 }
 
 
-
 footer a {
     text-decoration: none;
-    color: var(--paragraf);
+    color: var(--title);
     text-align: justify;
     transition: all 0.25s;
     -webkit-transition: all 0.25s;
@@ -807,7 +847,7 @@ footer a {
 }
 
 footer a:hover {
-    color: var(--title);
+    color: var(--secondary1);
 }
 
 .developer {
@@ -862,7 +902,54 @@ footer a:hover {
     }
 
     nav ul {
-        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: var(--primary1);
+        height: 80vh;
+        width: 100%;
+        position: absolute;
+        z-index: 2;
+        margin: auto;
+        opacity: 0;
+        padding: 0px;
+        transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+        -moz-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        -o-transform: translateY(-100%);
+        transition: all 0.40s;
+        -webkit-transition: all 0.40s;
+        -moz-transition: all 0.40s;
+        -ms-transition: all 0.40s;
+        -o-transition: all 0.40s;
+        border-radius: 3%;
+        -webkit-border-radius: 3%;
+        -moz-border-radius: 3%;
+        -ms-border-radius: 3%;
+        -o-border-radius: 3%;
+}
+
+    nav ul li a {
+        color: var(--title);
+        transition: all 0.10s;
+    }
+
+    nav ul li a:hover {
+        box-sizing: border-box;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    nav ul.slide {
+        transform: translateX(0);
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
     }
     
     .container {
@@ -962,15 +1049,23 @@ footer a:hover {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background-color: var(--secondary3);
+        background-color: var(--primary1);
         height: 100vh;
+        width: 100%;
         position: absolute;
         z-index: 2;
-        margin: -20px 0px 0px 40px;
-        transform: translateX(100%);
-        transition: all 0.40s;
+        margin: auto;
         opacity: 0;
-        
+        transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+        -moz-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        -o-transform: translateY(-100%);
+        transition: all 0.40s;
+        -webkit-transition: all 0.40s;
+        -moz-transition: all 0.40s;
+        -ms-transition: all 0.40s;
+        -o-transition: all 0.40s;
     }
 
     nav ul li a {
@@ -980,9 +1075,6 @@ footer a:hover {
 
     nav ul li a:hover {
         box-sizing: border-box;
-        background-color: var(--secondary1);
-        padding: 20px;
-        border-radius: 8px;
     }
 
     .menu-toggle {
@@ -996,7 +1088,7 @@ footer a:hover {
         -moz-transform: translateX(0);
         -ms-transform: translateX(0);
         -o-transform: translateX(0);
-}
+    }
 
     .header {
         width: auto;

@@ -1,11 +1,25 @@
 // Navbar mobile slider
-const menuToggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('nav ul');
+// const menuToggle = document.querySelector('.menu-toggle');
+// const nav = document.querySelector('nav ul');
 
-menuToggle.addEventListener('click', function(){
-    nav.classList.toggle('slide');
-});
+// menuToggle.addEventListener('click', function(){
+//     nav.classList.toggle('slide');
+// });
 
+checkbox = document.getElementById("hamburger");
+lab = document.getElementsByTagName("label");
+
+function checker(){
+	if(checkbox.checked == false){
+  	lab[0].innerHTML = '☰';
+  }else{
+  	lab[0].innerHTML = '✖';
+  }
+}
+
+checkbox.onclick = function(){
+	checker();
+}
 
 
 // Typing

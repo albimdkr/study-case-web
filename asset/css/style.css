@@ -196,12 +196,38 @@ nav ul li {
 nav ul li a {
     color: var(--title);
     text-decoration: none;
-    transition: all 0.50s;
+    position: relative;
+    color: var(--title);
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 0 10px;
 }
 
-nav ul li a:hover {
-    color: var(--secondary1);
-    font-weight: 300;
+nav ul li a:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  background-color: var(--secondary1);
+  transition: ease-in-out 0.30s;
+  -webkit-transition: ease-in-out 0.30s;
+  -moz-transition: ease-in-out 0.30s;
+  -ms-transition: ease-in-out 0.30s;
+  -o-transition: ease-in-out 0.30s;
+}
+
+nav ul li a:after {
+    left: 0;
+    bottom: -10px;
+}
+
+nav ul li a:before {
+    right: 0;
+    top: -10px;
+}
+
+nav ul li a:hover:after{
+    width: 100%;
 }
 
 label{
@@ -416,19 +442,18 @@ img:hover {
 .typewriter .sub-heading {
     font-size: var(--font-size-title3);
     font-weight: 100;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid var(--secondary1); /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-  }
+    overflow: hidden;
+    border-right: .15em solid var(--secondary1);
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:     typing 3.5s steps(40, end),    blink-caret .75s step-end infinite;
+    -webkit-animation:     typing 3.5s steps(40, end),    blink-caret .75s step-end infinite;
+}
   
   /* The typing effect */
   @keyframes typing {
-    from { width: 0 }
+    from { width: 0% }
     to { width: 100% }
   }
   
@@ -441,7 +466,6 @@ img:hover {
 
 .text {
     grid-area: text;
-    /* min-height: 300px; */
 }
 
 .button {
@@ -477,8 +501,7 @@ img:hover {
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    /*background-color:var(--warning1);
-    */border: 3px solid #538059;
+    border: 3px solid #538059;
     align-items: center;
     width: 7em;
     padding: 10px;
@@ -1160,9 +1183,17 @@ footer a:hover {
     }
 
     nav ul li a {
+        box-sizing: border-box;
         color: var(--title);
         transition: all 0.10s;
-    }
+        /* background-color: #3A3A3B; */
+        /* padding: 20px 10rem 20px 10rem; */
+        width: 100%;
+        -webkit-transition: all 0.10s;
+        -moz-transition: all 0.10s;
+        -ms-transition: all 0.10s;
+        -o-transition: all 0.10s;
+}
 
     nav ul li a:hover {
         box-sizing: border-box;
